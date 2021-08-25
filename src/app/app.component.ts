@@ -8,4 +8,12 @@ import { Component, ViewEncapsulation } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-v9-seed';
+  user = {id:1, name: 'Kevin', gender: 'M', ageGroup: '51+', userCode: 'M51+', reqs:{}, reqsStatus: {fruitMet: false, vegMet: false, proteinMet: false, grainMet: false}, registered: true, email: 'kevin@kevinruse.com'};
+  loggedIn: boolean;
+  
+  logIn(evt) {
+   console.log(evt);
+   this.loggedIn = evt;
+  }
+  
 }
