@@ -7,14 +7,23 @@ import { ChildComponentComponent } from './child-component/child-component.compo
 import { FooterComponent } from './footer/footer.component';
 import { FormInputComponent } from './form-input/form-input.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
-    AppComponent, HeaderComponent, ChildComponentComponent, FooterComponent, FormInputComponent
+    AppComponent,
+    HeaderComponent,
+    ChildComponentComponent,
+    FormInputComponent,
+    FooterComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
